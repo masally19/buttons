@@ -1,0 +1,52 @@
+*{
+    position: relative;
+} 
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.wrapper{
+    background-color: #333;
+    height:100%;
+}
+.btn{
+    color:#fff;
+    text-decoration: none;
+    font-family: 微軟正黑體;
+    padding: 16px 36px;
+    line-height: 24px;
+    background-color: #ff1965;
+    border-radius: 28px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.btn span{
+    font-size: 20px;
+}
+.btn:before{
+    content:"";
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 0%;
+    padding-top: 0%;
+    background-color: rgba(256,256,256,0.2);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.btn:hover:before{
+    width: 120%;
+    padding-top: 120%;
+}
+.btn:active{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    background-color: #fff;
+    color: #ff1965;
+}
